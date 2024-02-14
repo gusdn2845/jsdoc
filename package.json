@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "docs": "jsdoc -c jsdoc.config.json",
+    "predeploy": "npm run docs",
+    "deploy": "gh-pages -d out"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +14,8 @@
     "jsdoc": "^4.0.2"
   },
   "dependencies": {
-    "docdash": "^2.0.2"
-  }
+    "docdash": "^2.0.2",
+    "gh-pages": "^6.1.1"
+  },
+  "homepage": "https://gusdn2845.github.io/jsdoc"
 }
